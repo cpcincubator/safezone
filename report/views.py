@@ -6,7 +6,7 @@ def home(request):
     return render(request,'report/home.html')
 
 def submit(request):
-    return render(request,'report/submit.html')
+    return render(request,'report/submission.html')
 
 def read(request):
     return render(request,'report/read.html')
