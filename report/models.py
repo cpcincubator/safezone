@@ -9,3 +9,8 @@ class Report(models.Model):
     report_title=models.TextField()
     description=models.TextField()
 
+class Contact(models.Model):
+    name=models.TextField(null=True)
+    email=models.EmailField(null=True)
+    phone=models.TextField(null=True)
+

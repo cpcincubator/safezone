@@ -6,37 +6,44 @@
     <div class="box-element-product">
       <div class="card w-85">
         <div class="card-body">
-          <form>
+
+          <!--the submission form begins here-->
+
+          <form method="POST" enctype="application/x-www-form-urlencoded">
+            {% csrf_token %}
             <div class="form-row">
               <div class="form-group col-md-6">
-                <select id="inputState" class="form-control">
+                <select id="inputState" class="form-control" name="report_type">
                   <option selected>Type</option>
-                  <option>...</option>
+                  <option value="Extortion">Extortion</option>
+                  <option value="Theft">Theft</option>
+                  <option value="Dacoity">Dacoity</option>
+                  <option value="Sexual Harassment">Sexual Harassment</option>
+                  <option value="Rape">Rape</option>
+                  <option value="Murder">Murder</option>
+                  <option value="Kidnapping">Kidnapping</option>
+                  <option value="Bribe">Bribe</option>
+                  <option value="Mugging">Mugging</option>
+                  <option value="Snatching">Snatching</option>
                 </select>
               </div>
               <div class="form-group col-md-6">
-                <input type="location" class="form-control" placeholder="Location">
+                <input type="location" class="form-control" placeholder="Location" name="location">
               </div>
             </div>
             <div class="form-row">
               <div class="form-group col-md-6">
-                <select id="inputState" class="form-control">
-                  <option selected>Date</option>
-                  <option>...</option>
-                </select>
+                <input type="date" id="inputState" class="form-control" name="date">
               </div>
               <div class="form-group col-md-6">
-                <select id="inputState" class="form-control">
-                  <option selected>Time</option>
-                  <option>...</option>
-                </select>
+                <input type="time" id="inputState" class="form-control" name="time">
               </div>
             </div>
             <div class="form-group">
-              <input type="text" class="form-control" placeholder="Title">
+              <input type="text" class="form-control" placeholder="Title" name="report_title">
             </div>
             <div class="form-group">
-              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Describe"></textarea>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Describe the Incident" name="description"></textarea>
             </div>
             <div class="form-check">
               <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
@@ -46,17 +53,18 @@
             </div>
             <div class="form-row">
               <div class="form-group col-md-4">
-                <input type="text" class="form-control" placeholder="Name">
+                <input type="text" class="form-control" placeholder="Name" name="name">
               </div>
               <div class="form-group col-md-4">
-                <input type="email" class="form-control" placeholder="Email">
+                <input type="email" class="form-control" placeholder="Email" name="email">
               </div>
               <div class="form-group col-md-4">
-                <input type="number" class="form-control" placeholder="Number">
+                <input type="tel" class="form-control" placeholder="Phone Number" name="phone">
               </div>
             </div>
+            <button type="submit" class="btn btn-secondary">Submit</button>
+          
           </form>
-          <a href="{% url 'reports' %}" class="btn btn-secondary">Submit</a>
         </div>
       </div>
     </div>
