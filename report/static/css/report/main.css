@@ -1,5 +1,5 @@
 body{
-	background-color: grey;
+	background: black;
 }
 .formjust{
 	justify-content: space-between;
@@ -7,9 +7,17 @@ body{
 	color: white;
 	
 }
-
-
-
+form.example button {
+	float: left;
+	width: 20%;
+	padding: 10px;
+	background: #2196F3;
+	color: white;
+	font-size: 17px;
+	border: 1px solid grey;
+	border-left: none;
+	cursor: pointer;
+  }
 
 
 

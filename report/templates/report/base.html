@@ -8,29 +8,33 @@
 
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
-        <link rel="stylesheet" type="text/css" href="{% static 'report/main.css' %}">
+        <link rel="stylesheet" type="text/css" href="{% static 'css/report/main.css' %}">
      </head>
      <body>
           
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <a class="navbar-brand" href="#">Home</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-        
-            <div class="formjust">
-                   
-                     <a href="{% url 'reports' %}">Read Report</a>
-                     <a href="{% url 'submit' %}">Submit Report</a>
+      <nav id="navbar-example2" class="navbar">
+        <a class="navbar-brand" href="{% url 'home' %}">SafeZone</a>
+        <ul class="nav nav-pills">
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'reports' %}">Read Report</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'submit' %}">Submit Report</a>
+          </li>
+        </ul>
+      </nav>
+      <div style="position: absolute;
+      width: 1300px;
+      height: 2.9px;
+      margin-left: 38px;
+      border: .3px solid #dbbfbf73;
+      transform: rotate(-0.26deg);"></div>
                 
-            </div>
-          </nav>
-         <div class="container">
-            <br>
+            
                 {% block content %}
 
 
                  {% endblock content %}
-         </div>
+         
      </body>
 </html>
