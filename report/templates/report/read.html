@@ -1,89 +1,61 @@
+<!DOCTYPE html>
 {% extends 'report/base.html' %}
 {% load static %}
 {% block content %}
-<div class="row" style="margin-top: 50px; background:lightgray;">
-  <div class="col-lg-4">
-    <div class="box-element-product">
-      <div class="card" style="width: 22rem;">
+<html>
 
-        <div class="card-body">
-          <h5 class="card-title">Bribe</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-            content.</p>
-          <a href="#" class="btn btn-secondary btn-sm btn-block">Submit</a>
-        </div>
-      </div>
-    </div>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1" />
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  
+
+  <script defer src="http://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+  <title>safezone</title>
+</head>
+
+<body style="background: rgb(6, 15, 32);">
+  
+  <br><br>
+
+  <div class="s2">
+    <h4 style="color: brown; padding-left: 50px; font-family: Aldrich;font-style: normal;font-weight: normal;font-size: 25px; line-height: 18px;">Safety isn't expensive, it's priceless</h4>
+
+  <div class="search-box"
+    style="position: absolute; top: 15%; left: 68%; height: 50px; border-radius: 40px; padding:10px;">
+    <input class="search-txt" type="text" name="" placeholder="Type to search">
+      <button type="submit"><i class="fa fa-search"></i></button>  
+
+    
   </div>
-
-
-  <div class="col-lg-4">
-    <div class="box-element-product">
-      <div class="card" style="width: 22rem;">
-
-        <div class="card-body">
-          <h5 class="card-title">Harassment</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-            content.</p>
-          <a href="#" class="btn btn-secondary btn-sm btn-block">Submit</a>
-        </div>
-      </div>
-    </div>
-  </div>
-
-
-  <div class="col-lg-4">
-    <div class="box-element-product">
-      <div class="card" style="width: 22rem;">
-
-        <div class="card-body">
-          <h5 class="card-title">Mugged</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-            content.</p>
-          <a href="#" class="btn btn-secondary btn-sm btn-block">Choose</a>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="col-lg-4">
-    <div class="box-element-product">
-      <div class="card" style="width: 22rem;">
-
-        <div class="card-body">
-          <h5 class="card-title">Bribe</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-            content.</p>
-          <a href="#" class="btn btn-secondary btn-sm btn-block">Choose</a>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="col-lg-4">
-    <div class="box-element-product">
-      <div class="card" style="width: 22rem;">
-
-        <div class="card-body">
-          <h5 class="card-title">Mugged</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-            content.</p>
-          <a href="#" class="btn btn-secondary btn-sm btn-block">Choose</a>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="col-lg-4">
-    <div class="box-element-product">
-      <div class="card" style="width: 22rem;">
-
-        <div class="card-body">
-          <h5 class="card-title">Harassment</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-            content.</p>
-          <a href="#" class="btn btn-secondary btn-sm btn-block">Choose</a>
-        </div>
-      </div>
-    </div>
-  </div>
-
 </div>
-{% endblock content %}
+
+  <div style="padding-left: 90px;">
+    <div class="card w-75" style="margin-top: 70px; background-color: grey;">
+      
+      <div class="card-body">
+        <div style=" width: 400px;
+        height: 10px;
+        display: flex;
+        justify-content: space-around">
+          <div>
+            <h5 class="card-title" style="color: black; padding-left: 220px; padding-right: 550px;">Title</h5>
+          </div>
+          <div>
+            <h3 class="card-title" style="position: absolute; padding-left: 140px; padding-bottom:70px; width: 218px; height: 33px; font-family: Abel; font-style: normal; font-weight: normal; font-size: 18px; line-height: 23px; color: #000000;">Time  Date</h3>
+          </div>
+        </div>
+        <h5 class="card-title" style="border-style: ridge; background-color: gainsboro; width: 850px; padding: 30px; padding-right: 20px;  margin: 20px;">
+          Description..</h5>
+      </div>
+    </div>
+  </div>
+
+
+
+  {% endblock content %}
+</body>
+
+</html>
